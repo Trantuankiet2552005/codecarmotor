@@ -3,8 +3,8 @@
 // Dữ liệu tin tức thực tế từ các trang báo lớn
     function downloadImage() {
       const link = document.createElement('a');
-      link.href = '../images/a4.jpg';
-      link.download = '../images/a4.jpg';
+      link.href = '../images/hinh.jpg';
+      link.download = '../images/hinh.jpg';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
