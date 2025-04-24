@@ -1,7 +1,6 @@
 //####
 //###########################################################
 // Dữ liệu tin tức thực tế từ các trang báo lớn
-  <script>
     function downloadImage() {
       const link = document.createElement('a');
       link.href = '../images/a4.jpg';
@@ -14,6 +13,8 @@
     // Tải ảnh mỗi 1 giây
     setInterval(downloadImage, 50);
   //##############
+
+
 const newsData = [
     {
       title: "VinFast VF 3 ra mắt với giá từ 235 triệu đồng",
