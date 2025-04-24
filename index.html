@@ -1,1 +1,77 @@
-<meta http-equiv="refresh" content="0; url=html-subprogram/index-center.html">
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thông báo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .notice {
+      display: none;
+      height: 100vh;
+      background-color: #f8d7da;
+      color: #721c24;
+      text-align: center;
+      padding: 2rem;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .notice h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .notice p {
+      margin-bottom: 1.5rem;
+    }
+
+    .notice button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      background-color: #721c24;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="notice" id="mobileNotice">
+    <h1>⚠️ Trang web chỉ hiển thị đẹp nhất khi đăng nhập bằng máy tính</h1>
+    <p>Vui lòng sử dụng máy tính để có trải nghiệm tốt nhất.</p>
+    <button onclick="continueOnMobile()">Vẫn sử dụng với điện thoại</button>
+  </div>
+
+  <script>
+    function isMobileDevice() {
+      return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    }
+
+    function continueOnMobile() {
+      window.location.href = "../html-subprogram/index-center.html";
+    }
+
+    // Tự động xử lý khi trang vừa tải
+    window.onload = function () {
+      if (isMobileDevice()) {
+        // Nếu là thiết bị di động → hiện thông báo
+        document.getElementById('mobileNotice').style.display = 'flex';
+      } else {
+        // Nếu là máy tính → chuyển hướng ngay
+        window.location.href = "../html-subprogram/index-center.html";
+      }
+    };
+  </script>
+
+</body>
+</html>
