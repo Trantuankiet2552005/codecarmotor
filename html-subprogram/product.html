@@ -1,0 +1,91 @@
+    <!DOCTYPE html>
+    <html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chi tiết sản phẩm - CarShop</title>
+        <link rel="stylesheet" href="../css/product-style.css">
+        <link rel="stylesheet" href="../css/index-style.css">
+
+    </head>
+    <body>
+        <header>
+        
+            <div class="header-container">
+                <!--Logo-->
+                <div class="logo-container">
+                    <div class="logo">Car<span>Shop</span></div>
+                    <div class="tagline">Nơi đam mê tốc độ bắt đầu</div>
+                </div>
+            </div>
+                        <!--Logo-->
+                        <div style="justify-content: center;">
+                            <nav class="main-nav">
+                                <ul>
+                                    <li><a href="index-center.html">TRANG CHỦ</a></li>
+                                    <li><a href="index-product.html" class="active">Ô TÔ</a></li>
+                                    <li><a href="index-motor.html">XE MÁY</a></li>
+                                    <li><a href="intro.html">GIỚI THIỆU</a></li>
+                                    <li><a href="profile.html">THÔNG TIN</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                            <!--Logo-->
+                       <div style="justify-content: right;"></div>
+                                
+                            </div>
+    
+                      </div>
+                      <div class="auth-buttons">
+                        <span id="welcome-msg"></span>
+                        <a href="cart.html" class="cart-icon">
+                            <span class="cart-badge" id="cart-count">0</span>
+                            <svg class="cart-svg" viewBox="0 0 24 24" width="28" height="28">
+                                <path fill="currentColor" d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                            </svg>
+                        </a>
+                        &thinsp;
+                        <a href="login.html" class="btn login-btn" id="login-btn">ĐĂNG NHẬP</a>
+                        <a href="signup.html" class="btn signup-btn" id="signup-btn">ĐĂNG KÝ</a>
+                        <a href="#" class="btn logout-btn" id="logout-btn" style="display: none;">ĐĂNG XUẤT</a>
+                    </div>
+        </header>
+
+
+        <main class="product-container">
+            <div class="product-gallery" id="product-gallery">
+                <!-- Hình ảnh sẽ được thêm bằng JavaScript -->
+            </div>
+            
+            <div class="product-info">
+                <h1 id="product-name"></h1>
+                <p class="price" id="product-price"></p>
+                
+                <div class="specs">
+                    <h2>Thông số kỹ thuật</h2>
+                    <ul id="product-specs">
+                        <!-- Thông số sẽ được thêm bằng JavaScript -->
+                    </ul>
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-left">
+                <p>Trần Tuấn Kiệt: 23126021, Nhóm trưởng</p>
+                <p>Lê Quốc Khải: 23126017</p>
+                <p>Trương Phước Khánh: 23126018</p>
+            </div>
+            <div class="footer-right">
+                <p>Đại học Sư Phạm Kỹ Thuật TP.HCM</p>
+                <p>Giảng viên: Nguyễn Hữu Trung</p>
+                <p>Môn: Thiết Kế Web</p>
+            </div>
+        </footer>
+        <script src="../javascript/cars-js.js"></script>
+        <script src="../javascript/cart-js.js"></script>
+        <script src="../javascript/product-js.js"></script>
+        <script src="../javascript/auth.js"></script>
+    </body>
+    </html>
